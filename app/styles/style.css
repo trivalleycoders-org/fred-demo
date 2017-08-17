@@ -3,52 +3,33 @@
   height: 720px;
   background-color: lightgray;
 }
-
-nav {
+.app-nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
-  padding: 15px 0;
+  justify-content: space-between;
+  padding: 15px;
 }
-
 .btn-nav {
   margin: 0 10px;
 }
-
 h1, h2 {
   text-align: center;
 }
  h1 {
    font-size: 2.7em;
  }
-
  h2 {
    font-size: 1.8em;
  }
-
 .table-title {
   margin-top: 70px;
   font-size: 1.4em;
 }
-
 .member-table {
   margin: 20px 15px;
-
-}
-
-.choose-member-nav {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  padding: 15px 0;
 }
 .btn-go-back {
   margin-left: 15px;
-}
-.name-list-table {
-  /*margin-top: 60px;*/
-  /*smargin-bottom: 30px;*/
-
 }
 .name-list-row {
   text-align: center;
@@ -70,13 +51,6 @@ table.member tr td {
 .property-label {
   vertical-align: middle !important;
 }
-
-
-
-
-
-
-
 .property-on {
   box-shadow: rgb(154, 204, 133) 0 1px 0 0 inset;
   background: linear-gradient(rgb(116, 173, 90) 5%, rgb(104, 165, 75) 100%) rgb(116, 173, 90);
@@ -86,10 +60,10 @@ table.member tr td {
   cursor: pointer;
   color: rgb(255, 255, 255);
   font-size: 13px;
-  padding: 6px 11px;
+  padding: 4px 9px;
   text-decoration: none;
   text-shadow: rgb(133, 70, 14) 0 1px 0;
-  margin-left: 7px;
+  margin-left: 4px;
 }
 .property-off {
   box-shadow: rgb(207, 134, 108) 0 1px 0 0 inset;
@@ -100,25 +74,39 @@ table.member tr td {
   cursor: pointer;
   color: rgb(255, 255, 255);
   font-size: 13px;
-  padding: 6px 11px;
+  padding: 4px 9px;
   text-decoration: none;
   text-shadow: rgb(133, 70, 14) 0 1px 0;
-
+  margin-left: 4px;
 
 }
-.property-on-disabled {
-  box-shadow: rgb(207, 134, 108) 0 1px 0 0 inset;
-  background: linear-gradient(rgba(208, 69, 27, 0.1) 5%, rgba(188, 51, 21, 0.1) 100%) rgba(208, 69, 27, 0.2);
+.property-disabled {
+  box-shadow: rgb(140, 140, 140) 0 1px 0 0 inset;
+  background: linear-gradient(rgb(170, 170, 170) 5%, rgb(140, 140, 140) 100%) rgb(170, 170, 170);
   border-radius: 3px;
-  border: 1px solid rgba(148, 41, 17, 0.1);
+  border: 1px solid rgb(120, 120, 120);
   display: inline-block;
   cursor: pointer;
-  color: lightgray;
+  color: black;
   font-size: 13px;
-  padding: 6px 11px;
+  padding: 4px 9px;
   text-decoration: none;
-  text-shadow: rgb(133, 70, 14) 0 1px 0;
-
+  text-shadow: rgb(90, 90, 90) 0 1px 0;
+  margin-left: 4px;
+}
+.date-dropdown {
+  width: 400px;
+}
+.dropdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.property-dropdown {
+  width: 200px;
+}
+.pages-nav {
+  margin: 15px;
 }
 
 /*
