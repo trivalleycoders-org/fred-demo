@@ -1,0 +1,255 @@
+.home {
+  width: 480px;
+  height: 720px;
+  background-color: lightgray;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding: 15px 0;
+}
+
+.btn-nav {
+  margin: 0 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+ h1 {
+   font-size: 2.7em;
+ }
+
+ h2 {
+   font-size: 1.8em;
+ }
+
+.table-title {
+  margin-top: 70px;
+  font-size: 1.4em;
+}
+
+.member-table {
+  margin: 20px 15px;
+
+}
+
+.choose-member-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 15px 0;
+}
+.btn-go-back {
+  margin-left: 15px;
+}
+.name-list-table {
+  /*margin-top: 60px;*/
+  /*smargin-bottom: 30px;*/
+
+}
+.name-list-row {
+  text-align: center;
+  font-size: 1.8em;
+}
+.name-list-container {
+  margin-top: 50px;
+  height: 480px;
+  overflow: auto;
+}
+table.member tr td {
+  border: none;
+}
+.property-item {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: darkgray;
+}
+.property-label {
+  vertical-align: middle !important;
+}
+
+
+
+
+
+
+
+.property-on {
+  box-shadow: rgb(154, 204, 133) 0 1px 0 0 inset;
+  background: linear-gradient(rgb(116, 173, 90) 5%, rgb(104, 165, 75) 100%) rgb(116, 173, 90);
+  border-radius: 3px;
+  border: 1px solid rgb(59, 110, 34);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  padding: 6px 11px;
+  text-decoration: none;
+  text-shadow: rgb(133, 70, 14) 0 1px 0;
+  margin-left: 7px;
+}
+.property-off {
+  box-shadow: rgb(207, 134, 108) 0 1px 0 0 inset;
+  background: linear-gradient(rgb(208, 69, 27) 5%, rgb(188, 51, 21) 100%) rgb(208, 69, 27);
+  border-radius: 3px;
+  border: 1px solid rgb(148, 41, 17);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  padding: 6px 11px;
+  text-decoration: none;
+  text-shadow: rgb(133, 70, 14) 0 1px 0;
+
+
+}
+.property-on-disabled {
+  box-shadow: rgb(207, 134, 108) 0 1px 0 0 inset;
+  background: linear-gradient(rgba(208, 69, 27, 0.1) 5%, rgba(188, 51, 21, 0.1) 100%) rgba(208, 69, 27, 0.2);
+  border-radius: 3px;
+  border: 1px solid rgba(148, 41, 17, 0.1);
+  display: inline-block;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 13px;
+  padding: 6px 11px;
+  text-decoration: none;
+  text-shadow: rgb(133, 70, 14) 0 1px 0;
+
+}
+
+/*
+.user-input-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+  align-items: center;
+}
+
+.branding {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.city-input {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 7;
+  text-align: center;
+}
+
+.header-title-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    align-items: center;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    min-height: 30px;
+    margin: 10px;
+}
+
+.flex-item-grow {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 1;
+}
+.current-conditions {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.current-temp {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.current-wind {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.current-top-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    background-color: #32cd32;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.current-bottom-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    background-color: #32cd32;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.forecast-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    background-color: #32cd32;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.day {
+  background-color: cornflowerblue;
+  min-height: 30px;
+  margin: 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+.location-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  background-color: #32cd32;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+#header {
+  background-color: #7fffd4;
+}
+
+#user-input {
+  background-color: #00bfff;
+}
+
+#current {
+  background-color: #32cd32;
+}
+
+#forecast {
+  background-color: #db7083;
+}
+
+#location {
+  background-color: #c0c0c0;
+}
+*/
