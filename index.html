@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>02-flexbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="col-sm-7">
+      <div class="app-wrapper">
+        <div class="app-nav">
+          <div class="nav-left">
+
+          </div>
+          <div class="nav-right">
+            <a href="schedule.html"><button type="button" class="btn btn-default btn-nav">Schedule</button></a>
+            <a href="members.html"><button type="button" class="btn btn-default btn-nav">Members</button></a>
+          </div>
+
+        </div>
+        <div class="container-fluid">
+          <h1>Pleasanton Rotary Club</h1>
+          <h2 class="table-title">Thursday, August 31, 2017</h2>
+          <div class="table-responsive">
+            <table class="table home-table">
+              <tbody>
+                <tr>
+                  <th>Role</th>
+                  <th>Name</th>
+                </tr>
+                <tr>
+                  <td>Greeter</td>
+                  <td>James Cameron</td>
+                </tr>
+                <tr>
+                  <td>Photographer</td>
+                  <td>Alice Thomas</td>
+                </tr>
+                <tr>
+                  <td>MC</td>
+                  <td>John Eng</td>
+                </tr>
+                <tr>
+                  <td>News Letter</td>
+                  <td>Karen Albert</td>
+                </tr>
+                <tr>
+                  <td>Rox X</td>
+                  <td>Mary Susi</td>
+                </tr>
+                <tr>
+                  <td>Role Y</td>
+                  <td>William Hopkins</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <h4>Mock-up</h4>
+      <ol>
+        <li>This is a mock-up only. Buttons, dropdowns etc do not work.</li>
+        <li>Actual app will be happier colors</li>
+      </ol>
+      <h4>Application</h4>
+      <ol>
+        <li>What should the apps title be - ask Fred?</li>
+        <li>Fits on desktop screen. Resizing for mobile is optional</li>
+        <li>We currently have an assumption that meetings will be every TH and that is dangerous. What if they change to every Monday?</li>
+      </ol>
+      <h4>This Screen</h4>
+      <ol>
+        <li>Shows schedule for next meeting</li>
+        <li>Opens with view of schedule for the next meeting. If today is TH it will open for today. If today is any other week it will open for the date of the next TH.</li>
+        <li>If no roles have been assigned for the next meeting they will be choosen via sort on lastServedDate. Specifics detailed in the spec for Schedule UI.</li>
+        <li>The schedule date cannot be changed on this screen.</li>
+        <li>Clicking <b>Schedule</b> navigates to the Schedule UI defaulted to the next TH (same rule as #2 above)</li>
+        <li>Clicking <b>Members</b> navigates to the Members UI </li>
+      </ol>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

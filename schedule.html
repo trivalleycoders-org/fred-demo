@@ -6,43 +6,25 @@
     <title>02-flexbox</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="icon" href="/favicon.ico" />
-
-    <!-- Font Awesome CDN integration -->
     <link rel="stylesheet"
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-    <!-- Bootstrap: Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../styles/style.css">
-    <!-- jQuery for AJAX GitHub component -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
-    <![endif]-->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="pages-nav">
-      <button><a href="index.html">Home</a></button>
-      <button><a href="schedule.html">Schedule</a></button>
-      <button><a href="choose-member.html">Members</a></button>
-      <button><a href="view-member.html">View/Edit Member</a></button>
-    </div>
     <div class="container-fluid">
       <div class="col-sm-7">
-        <div class="home">
+        <div class="app-wrapper">
           <div class="app-nav">
             <div class="nav-left">
-              <button type="button" class="btn btn-default btn-lg btn-go-back">
+              <a href="index.html"><button type="button" class="btn btn-default btn-lg btn-go-back">
                 <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
-              </button>
+              </button></a>
+              <a href="index.html"><button type="button" class="btn btn-default btn-lg btn-go-back">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+              </button></a>
             </div>
             <div class="nav-right">
               <button type="button" class="btn btn-default btn-lg btn-go-back">
@@ -80,7 +62,6 @@
                       James Cameron
                       <span class="caret"></span>
                     </button>
-                  </td>
                   </td>
                 </tr>
                 <tr>
@@ -154,14 +135,7 @@
           <li>Click check mark button when done to save</li>
         </ol>
       </div>
-
-
     </div>
-
-
-
-    <!-- keep at bottom of body -->
-    <!-- Bootstrap: Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

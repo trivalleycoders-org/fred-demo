@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>member-view</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="col-sm-7">
+      <div class="app-wrapper">
+        <div class="app-nav">
+          <div class="nav-left">
+            <button type="button" class="btn btn-default btn-lg btn-go-back">
+              <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+            </button>
+            <a href="index.html"><button type="button" class="btn btn-default btn-lg btn-go-back">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            </button></a>
+          </div>
+          <div class="nav-right">
+            <button type="button" class="btn btn-default btn-lg btn-go-back">
+              <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-default btn-lg btn-go-back">
+              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <h1>James Cameron</h1>
+          <div class="member-container">
+
+            <table class="table table-responsive member">
+              <tbody>
+                <tr>
+                  <td>First</td>
+                  <td>James</td>
+                </tr>
+                <tr>
+                  <td>Last</td>
+                  <td>Cameron</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>james@example.com</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h3>Role Preferences</h3>
+            <table class="table table-responsive member">
+              <tbody>
+                <tr>
+                  <td class="property-label">Exempt</td>
+                  <td>
+                    <button class="property-on">
+                      On
+                    </button>
+                    <button class="property-off">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table-responsive member">
+              <tbody>
+                <tr>
+                  <td class="property-label">Greeter</td>
+                  <td>
+                    <button class="property-on">
+                      On
+                    </button>
+                    <button class="property-disabled">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property-label">Photographer</td>
+                  <td>
+                    <button class="property-disabled">
+                      On
+                    </button>
+                    <button class="property-off">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property-label">MC</td>
+                  <td>
+                    <button class="property-on">
+                      On
+                    </button>
+                    <button class="property-disabled">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property-label">News Letter</td>
+                  <td>
+                    <button class="property-on">
+                      On
+                    </button>
+                    <button class="property-disabled">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property-label">Role X</td>
+                  <td>
+                    <button class="property-on">
+                      On
+                    </button>
+                    <button class="property-disabled">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="property-label">Role Y</td>
+                  <td>
+                    <button class="property-disabled">
+                      On
+                    </button>
+                    <button class="property-off">
+                      Off
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <ol>
+        <li>What other data about the user should be shown?</li>
+        <li>Page loads in read-only mode. Click the pencil button to edit</li>
+        <li>Once clicked, the pencil button will become a check-mark</li>
+        <li>Click the check-mark to save changes</li>
+        <li>Click the trash can to delete the user. The user will be marked 'inactive' in the database but the user's record will not be erased.</li>
+        <li>If the <b>Exempt</b> preference is turned-on, all other preferences will be disabled</li>
+        <li>Click the <b>On</b> or <b>Off</b> buttons to change preference</li>
+      </ol>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
