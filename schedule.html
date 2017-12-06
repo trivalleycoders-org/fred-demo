@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>02-flexbox</title>
+    <title>rotary-schedule</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,16 +18,13 @@
         <div class="app-wrapper">
           <div class="app-nav">
             <div class="nav-left">
-              <a href="index.html"><button type="button" class="btn btn-default btn-lg btn-go-back">
-                <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
-              </button></a>
-              <a href="index.html"><button type="button" class="btn btn-default btn-lg btn-go-back">
-                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-              </button></a>
             </div>
             <div class="nav-right">
               <button type="button" class="btn btn-default btn-lg btn-go-back">
-                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Cancel
+              </button>
+              <button type="button" class="btn btn-default btn-lg btn-go-back">
+                Save
               </button>
             </div>
           </div>
@@ -51,7 +47,10 @@
               <tbody>
                 <tr>
                   <th>Role</th>
-                  <th>Name</th>
+                  <th>Member</th>
+                  <th>Last Role</th>
+                  <th>Comment</th>
+                  <th></th>
                 </tr>
                 <tr>
                   <td>
@@ -63,6 +62,9 @@
                       <span class="caret"></span>
                     </button>
                   </td>
+                  <td>some role 12/15/17</td>
+                  <td>some comment</td>
+                  <td><a href="contact.html"><button type="button" name="button">Contact</button></a></td>
                 </tr>
                 <tr>
                   <td>
@@ -73,6 +75,9 @@
                       Alice Thomas
                       <span class="caret"></span>
                     </button>
+                    <td>some role 12/15/17</td>
+                    <td>some comment</td>
+                    <td><a href="contact.html"><button type="button" name="button">Contact</button></a></td>
                   </td>
                 </tr>
                 <tr>
@@ -84,6 +89,9 @@
                       John Eng
                       <span class="caret"></span>
                     </button>
+                    <td>some role 12/15/17</td>
+                    <td>some comment</td>
+                    <td><a href="contact.html"><button type="button" name="button">Contact</button></a></td>
                   </td>
                 </tr>
                 <tr>
@@ -95,6 +103,9 @@
                       Karen Albert
                       <span class="caret"></span>
                     </button>
+                    <td>some role 12/15/17</td>
+                    <td>some comment</td>
+                    <td><a href="contact.html"><button type="button" name="button">Contact</button></a></td>
                   </td>
                 </tr>
                 <tr>
@@ -106,6 +117,9 @@
                       Mary Susi
                       <span class="caret"></span>
                     </button>
+                    <td>some role 12/15/17</td>
+                    <td>some comment</td>
+                    <td><a href="contact.html"><button type="button" name="button">Contact</button></a></td>
                   </td>
                 </tr>
                 <tr>
@@ -117,6 +131,9 @@
                       William Hopkins
                       <span class="caret"></span>
                     </button>
+                    <td>some role 12/15/17</td>
+                    <td>some comment</td>
+                    <td><a href="contact.html"><button type="button" name="button">Contact</button></a></td>
                   </td>
                 </tr>
               </tbody>
@@ -126,13 +143,16 @@
       </div>
       <div class="col-sm-5">
         <ol>
-          <li>Use to edit the schedule for a given week</li>
-          <li>Next 6 members in rotatation are automatically picked taking into consideration their preferred roles</li>
-          <li>Date dropdown will either be a calendar widget or a list of weeks</li>
+          <li>Schedule is always in read/write mode</li>
+          <li>Clicking the <b>Save</b> button will write the schedule to the database and navigate back to Home</li>
+          <li>Clicking the <b>Cancel</b> button will discard all changes, nothing will be written to the database, and navigate back to Home</li>
+          <li>Changing the date via the <b>date dropdown</b> will show the schedule for the selected date</li>
+          <ol>
+            <li>Will show a list of past and future dates. Since it is only Thursday's, a calendar widget doesn't seem to be the most useble way of presenting the dates - TBD</li>
+            <li>If the date is a past date the roles will be filled from the data retrieved from the database</li>
+            <li>If the date is a future date and there are no rows for that date in the database the roles will be filled based on lastServedDate. I.e., sort members via lastServedDate ascending, assign members from first 6 to roles with no adjustment made for exclusions</li>
+          </ol>
           <li>Dates will be calculated unless there is a need for exceptions in which case we will have to consider keeping a list of dates in the database</li>
-          <li><b><i>Sould be</i></b> able to pick from list or type to filter list (TBD)</li>
-          <li>List always appears in <em>edit mode</em></li>
-          <li>Click check mark button when done to save</li>
         </ol>
       </div>
     </div>

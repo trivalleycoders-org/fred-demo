@@ -19,11 +19,23 @@
     <div class="app-wrapper">
       <div class="app-nav">
         <div class="nav-left">
+
+          <!-- <a href="index.html">
+            <button type="button" class="btn btn-default btn-lg btn-go-back">
+              <i class="fas fa-arrow-alt-circle-left fa-lg"></i> Members
+            </button>
+          </a>
+          <a href="index.html">
+            <button type="button" class="btn btn-default btn-lg btn-go-back">
+              <i class="fas fa-home fa-lg"></i>
+            </button>
+          </a> -->
+
         </div>
         <div class="nav-right">
           <a href="members.html">
             <button type="button" class="btn btn-default btn-lg btn-go-back">
-                Save
+              Save
             </button>
           </a>
           <a href="members.html">
@@ -41,15 +53,15 @@
             <tbody>
               <tr>
                 <td>First</td>
-                <td><input type="text" name="" value="James"></td>
+                <td><input type="text" name="" value="" placeholder="first name"></td>
               </tr>
               <tr>
                 <td>Last</td>
-                <td><input type="text" name="" value="Cameron"></td>
+                <td><input type="text" name="" value="" placeholder="last name"></td>
               </tr>
               <tr>
                 <td>Email</td>
-                <td><input type="text" name="" value="james@example.com"></td>
+                <td><input type="text" name="" value="" placeholder="email"></td>
               </tr>
 
             </tbody>
@@ -60,10 +72,10 @@
               <tr>
                 <td class="property-label">Exempt</td>
                 <td>
-                  <button class="property-on">
+                  <button class="property-off">
                       On
                     </button>
-                  <button class="property-off">
+                  <button class="property-on">
                       Off
                     </button>
                 </td>
@@ -86,10 +98,10 @@
               <tr>
                 <td class="property-label">Photographer</td>
                 <td>
-                  <button class="property-disabled">
+                  <button class="property-on">
                       On
                     </button>
-                  <button class="property-off">
+                  <button class="property-disabled">
                       Off
                     </button>
                 </td>
@@ -130,10 +142,10 @@
               <tr>
                 <td class="property-label">Role Y</td>
                 <td>
-                  <button class="property-disabled">
+                  <button class="property-on">
                       On
                     </button>
-                  <button class="property-off">
+                  <button class="property-disabled">
                       Off
                     </button>
                 </td>
@@ -146,11 +158,11 @@
   </div>
   <div class="col-sm-5">
     <ol>
-      <li>What other data about the user should be shown?</li>
-      <li>Page loads in read-only mode. Click the pencil button to edit</li>
-      <li>Once clicked, the pencil button will become a check-mark</li>
-      <li>Click the check-mark to save changes</li>
-      <li>Click the trash can to delete the user. The user will be marked 'inactive' in the database but the user's record will not be erased.</li>
+      <li>I'm not crazy about the whole 'exclusions' thing with on/off buttons.</li>
+      <li>First or last name is required</li>
+      <li>Email is optional</li>
+      <li>Clicking <b>Save</b> will check for required fields. If validated, will save data to database, and navigate back to Members</li>
+      <li>Clicking <b>Cancel</b> will discard all input, not write to the database and navigate back to Members</li>
       <li>If the <b>Exempt</b> preference is turned-on, all other preferences will be disabled</li>
       <li>Click the <b>On</b> or <b>Off</b> buttons to change preference</li>
     </ol>
